@@ -17,7 +17,7 @@ incremental_recipe: |
 
 case $ARCHITECTURE in
     osx*) [[ ! $BOOST_ROOT ]] && BOOST_ROOT=$(brew --prefix boost)
-          [[ $OPENSSL_ROOT ]] || OPENSSL_ROOT=$(brew --prefix openssl)
+          [[ $OPENSSL_ROOT ]] || OPENSSL_ROOT=/usr/local/ssl
           ;;
 esac
 

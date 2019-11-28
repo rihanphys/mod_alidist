@@ -20,7 +20,8 @@ env:
 #!/bin/bash -e
 
 if [[ $ARCHITECTURE == osx* && ! $OPENSSL_ROOT ]]; then
-  OPENSSL_ROOT=$(brew --prefix openssl)
+    # OPENSSL_ROOT=$(brew --prefix openssl)
+     OPENSSL_ROOT=/usr/local/ssl
 fi
 
 # Determine whether we are building for ROOT 5 or ROOT 6+

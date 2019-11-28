@@ -73,7 +73,7 @@ case $ARCHITECTURE in
     COMPILER_CXX=clang++
     COMPILER_LD=clang
     [[ ! $GSL_ROOT ]] && GSL_ROOT=$(brew --prefix gsl)
-    [[ ! $OPENSSL_ROOT ]] && SYS_OPENSSL_ROOT=$(brew --prefix openssl)
+    [[ ! $OPENSSL_ROOT ]] && SYS_OPENSSL_ROOT=/usr/local/ssl
   ;;
 esac
 
